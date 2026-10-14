@@ -1,0 +1,7 @@
+{
+  "name": "donation-verifier-cron",
+  "main": "index.js",
+  "compatibility_date": "2026-10-01",
+  "triggers": { "crons": ["*/5 * * * *"] },
+  "vars": { "SITE_URL": "https://YOUR-PROJECT.pages.dev" }
+}

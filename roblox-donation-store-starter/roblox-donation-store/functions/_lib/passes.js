@@ -1,0 +1,27 @@
+export const PASSES = [
+  { name: 'REAPER', id: 2036090286, price: 5 },
+  { name: 'WRATH', id: 2038142267, price: 10 },
+  { name: '30k coins', id: 2026532592, price: 10 },
+  { name: 'HAVOC', id: 2037944261, price: 20 },
+  { name: 'ROGUE', id: 2037890261, price: 30 },
+  { name: '150k coins', id: 2026448575, price: 30 },
+  { name: 'RUTHLESS', id: 2038232264, price: 50 },
+  { name: 'VENOM', id: 2037236267, price: 70 },
+  { name: 'OUTLAW', id: 2037212266, price: 100 },
+  { name: '500k coins', id: 2027036582, price: 100 },
+  { name: 'VIP I', id: 2025914600, price: 100 },
+  { name: '1.2M coins', id: 2027102574, price: 200 },
+  { name: 'Bronze Donater', id: 2002940361, price: 200 },
+  { name: 'VIP II', id: 2026316586, price: 300 },
+  { name: 'Silver package', id: 2025621190, price: 300 },
+  { name: 'VIP III', id: 2026634571, price: 500 },
+  { name: 'Silver Donater', id: 2014484347, price: 500 },
+  { name: 'Gold Donater', id: 2025986835, price: 1000 },
+  { name: 'Platinum Donater', id: 1999562949, price: 1500 },
+  { name: 'Diamond Donater', id: 1999448883, price: 3000 },
+  { name: 'Elite Donater', id: 1993856429, price: 5000 },
+  { name: 'Star Donater', id: 2026316766, price: 10000 },
+  { name: 'Supreme Donater', id: 2027084777, price: 20000 },
+];
+export const findPass = (id) => PASSES.find(p => p.id === Number(id));
+export const purchaseUrl = (id) => `https://www.roblox.com/game-pass/${id}`;

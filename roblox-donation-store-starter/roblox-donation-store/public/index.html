@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1014">
+  <title>Roblox Donation Store</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand" aria-label="Donation store">D</div>
+    <nav><a href="#home">Home</a><a href="#donate">Donate</a><a href="#how">How it works</a></nav>
+    <a class="discord" href="https://discord.com" id="discordLink" target="_blank" rel="noopener noreferrer">Discord</a>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">OFFICIAL ROBLOX GAMEPASS STORE</p>
+      <h1>Support the experience.<br><span>Unlock your gamepass.</span></h1>
+      <p class="lead">Link your Roblox account, choose a gamepass and buy it directly on Roblox. We'll verify your ownership and announce it in Discord.</p>
+      <a class="primary" href="#donate">Browse gamepasses &rarr;</a>
+    </section>
+    <section class="account card" aria-live="polite">
+      <p class="eyebrow">YOUR ACCOUNT</p>
+      <div id="accountBody"><h2>Link your Roblox account</h2><p>Sign in through Roblox so we can verify the right account.</p><a class="primary" href="/api/auth/start">Link with Roblox</a></div>
+    </section>
+    <section id="donate" class="donate">
+      <div class="section-heading"><div><p class="eyebrow">SHOP GAMEPASSES</p><h2>Choose your support</h2></div><span class="pass-total">23 gamepasses</span></div>
+      <p class="notice">Payments happen on Roblox. The displayed prices are your supplied list; Roblox shows the final price. Each pass is normally a one-time purchase.</p>
+      <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+      <div id="passGrid" class="grid"><p>Loading gamepasses...</p></div>
+    </section>
+    <section id="how" class="how"><h2>How it works</h2><div class="steps"><article class="card"><b>01</b><h3>Link Roblox</h3><p>Authorize with Roblox's official login.</p></article><article class="card"><b>02</b><h3>Choose and buy</h3><p>Purchase a gamepass on Roblox, not on this website.</p></article><article class="card"><b>03</b><h3>Get verified</h3><p>We check Roblox ownership and post to Discord once per pass.</p></article></div></section>
+  </main>
+  <footer>Independent fan-made experience store. Not affiliated with or endorsed by Roblox Corporation.</footer>
+</body>
+</html>
